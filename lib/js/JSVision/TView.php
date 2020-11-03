@@ -713,7 +713,7 @@ TView.prototype.valid = function( command ) {
     return true;
 };
 
-function message( receiver, what, command, infoPtr) { console.log('Message: '+receiver.id);
+function message( receiver, what, command, infoPtr) {
     if( receiver == null)
         return null;
 
@@ -721,7 +721,7 @@ function message( receiver, what, command, infoPtr) { console.log('Message: '+re
     event.what = what;
     event.message.command = command;
     event.message.infoPtr = infoPtr; 
-    receiver.handleEvent( event ); console.log('Message : Inside :'+event.what);
+    receiver.handleEvent( event );
     if( event.what == evNothing )
         return event.message.infoPtr;
     else
