@@ -1,7 +1,5 @@
 <?php
  include_once "TGroup.php";
- include_once "TScreen.php";
- include_once "TWrapper.php";
 ?>
 
 var statusLine = null;
@@ -120,7 +118,7 @@ TProgram.prototype.idle = function()
 };
 
 TProgram.prototype.InitDeskTop = function() {
-  return new TWrapper('');
+  return null;
 };
 
 TProgram.prototype.initScreen = function() {// insert any additonal code you want executed when windows resizes or redrawn
@@ -128,7 +126,7 @@ TProgram.prototype.initScreen = function() {// insert any additonal code you wan
 };
 
 TProgram.prototype.InitMenuBar = function() {
-  return new TWrapper('');
+  return null;
 };
 
 TProgram.prototype.initStatusLine = function(bounds) {
