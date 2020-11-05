@@ -445,6 +445,9 @@ TView.prototype.getEvent = function( event ) {
 };
 
 TView.prototype.getExtent = function(extent) {
+   if (arguments.length === 0) {
+    extent = new TRect();
+   }
    extent.assign( 0, 0, this.size.x, this.size.y );
    return extent;
 };
