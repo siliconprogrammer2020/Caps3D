@@ -6,9 +6,8 @@ var phFocused = 1;
 
 function TGroup(bounds) {
   TView.call(this,bounds);
-  this.list=[]; 
   this.current=null;
-  //this.last = null;
+  this.last = null;
   this.phase = phFocused;
   this.lockFlag = 0;
   this.endState = 0;
@@ -16,9 +15,7 @@ function TGroup(bounds) {
   this.getExtent(this.clip = new TRect());
   this.eventMask = 0xFFFF;
 
-  //var self=this;
-  //this.list.forEach(function(item) { item.owner=self;});
-  //this.push(list);
+    this.list=[]; 
 };
 
 extend(TGroup,TView); //  inherit
