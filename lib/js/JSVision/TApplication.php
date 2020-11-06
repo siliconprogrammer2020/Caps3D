@@ -15,7 +15,7 @@ function TApplication(width,height,overflow_width,overflow_height) {
    initHistory();
    TProgram.call(this,width,height);
 
-   this.insert(new TWrapper("<image id='rotate' src='/image/1x1.png' style='position:absolute; z-index:200;top:"+this.overflow.y+"px; left:"+this.overflow.x+"px' border='0'>")); 
+   this.insert(new TWrapper("<image id='rotate' src='/image/1x1.png' style='position:absolute; z-index:999;top:"+this.overflow.y+"px; left:"+this.overflow.x+"px' border='0'>")); 
 
    var self = this;
    if (mobileDevice) {setTimeout(function(){self.updateScreen();},1000);} else self.updateScreen();
