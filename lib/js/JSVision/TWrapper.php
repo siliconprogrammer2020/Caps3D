@@ -1,6 +1,7 @@
 <?php
    include_once "TView.php";
 ?>
+
 TWrapper = function(content) {
   TView.call(this);
   this.content = content;
