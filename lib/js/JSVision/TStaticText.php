@@ -1,3 +1,7 @@
+<?php
+   include_once "TView.php";
+?>
+
 function TStaticText(bounds,text) {  
   TView.call(this,bounds); 
   this.content = text;
