@@ -1,5 +1,6 @@
 <?php
    include_once "TGroup.php";
+   include_once "TStaticText.php";
 ?>
 
 const wfMove  = 0x01,
