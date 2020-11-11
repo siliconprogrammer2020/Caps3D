@@ -1,6 +1,7 @@
 <?php
    include_once "TGroup.php";
    include_once "TStaticText.php";
+   include_once "TSpeedButton.php";
 ?>
 
 const wfMove  = 0x01,
