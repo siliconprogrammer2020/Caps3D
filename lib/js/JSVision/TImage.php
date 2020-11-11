@@ -13,7 +13,7 @@ function TImage(bounds,image,command) {
   this.command=(arguments.length === 3)?command.replace(/"/g,"\'"):'';
 };
 
-extend(TImage,TView); //  inherit TApplet
+extend(TImage,TView); 
 
 TImage.prototype.draw = function() { // draw complete view
   var html = '<img style="'+this.style()+'" id="view'+this.id+'" src="'+this.image+'" '+this.other()+'>';
